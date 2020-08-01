@@ -1,0 +1,16 @@
+{
+    "categorias": [
+        {
+        "id" : 1,
+        "nome": "Aerohiit",
+        "descricao": "Categoria Aerohiit",
+        "cor": "#F22613"
+        },
+        {
+            "id" : 2,
+            "nome": "Cintura",
+            "descricao": "Categoria Cintura",
+            "cor": "#F22613"
+            }
+    ]
+  }

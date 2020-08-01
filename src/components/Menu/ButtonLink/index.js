@@ -2,7 +2,6 @@ import React from 'react';
 
 
 function ButtonLink(props){
-	//props.className, cada ButtonLink terá sua props que é <ButtonLink className="tear">
 	return (
   		<a href={props.href} className={props.className}>  
   		   {props.children}
