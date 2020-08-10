@@ -1,63 +1,78 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState, useEffect, useMemo } from 'react';
+import { Link, useHistory } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
-import { SuccessButton } from '../../../components/Button';
+import { SuccessButton, DangerButton, Button } from '../../../components/Button';
 import useForm from '../../../hooks/useForm';
+import categoriasRepository from '../../../repositories/categorias';
+import { TableContainer } from '../../../components/Table';
+import Loader from '../../../components/Loader';
 
 function CadastroCategoria() {
+  const history = useHistory();
   const valoresIniciais = {
-    nome: '',
-    descricao: '',
+    titulo: '',
     cor: '',
+    descricao: '',
   };
 
   const { handleChange, values, clearForm } = useForm(valoresIniciais);
-  const [categorias, setCategorias] = useState(['Aerobico']);
+  const [categorias, setCategorias] = useState([]);
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://fitnessflix.herokuapp.com/categorias';
-    fetch(URL)
-      .then(async (respostaDoServer) => {
-        if (respostaDoServer.ok) {
-          const resposta = await respostaDoServer.json();
-          setCategorias(resposta);
-        }
+    categoriasRepository
+      .getAll()
+      .then((categoriasFromServer) => {
+        setCategorias(categoriasFromServer);
       });
   }, []);
+
+  const columns = useMemo(
+    () => [
+      {
+        Header: 'Título',
+        accessor: 'titulo',
+      },
+      {
+        Header: 'Descrição',
+        accessor: 'descricao',
+      },
+    ], [],
+  );
 
   return (
     <PageDefault>
       <h1>
         Cadastro de Categoria :
         {' '}
-        {values.nome}
+        {values.titulo}
         {' '}
       </h1>
 
-      <form onSubmit={function handleSubmit(infosDoEvento) {
-        infosDoEvento.preventDefault();
-        setCategorias([
-          ...categorias,
-          values,
-        ]);
-        clearForm();
+      <form onSubmit={(event) => {
+        event.preventDefault();
+        categoriasRepository.create({
+          titulo: values.titulo,
+          descricao: values.descricao,
+          cor: values.cor,
+        })
+          .then(() => {
+            history.push('/');
+          });
       }}
       >
 
         <FormField
           label="Titulo da Categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
         />
 
         <FormField
-          label="Descrição:"
-          type="textarea"
+          label="Descrição da categoria"
+          type="text"
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
@@ -71,24 +86,25 @@ function CadastroCategoria() {
           onChange={handleChange}
         />
 
-        <SuccessButton> Cadastrar </SuccessButton>
+        <SuccessButton type="submit">
+          Cadastrar
+        </SuccessButton>
 
-        {categorias.length === 0 && (
-          <div>
-            ...Loading
-          </div>
-        )}
+        <DangerButton onClick={clearForm}>
+          Limpar
+        </DangerButton>
       </form>
 
-      <ul>
-        {categorias.map((categoria) => (
-          <li key={`${categoria.titulo}`}>
-            {categoria.titulo}
-          </li>
-        ))}
-      </ul>
+      {categorias.length === 0
+        ? <Loader />
+        : <TableContainer columns={columns} data={categorias} />}
 
-      <Link to="/"> Ir para home </Link>
+      <Button as={Link} to="/">
+        Ir para a HomePage
+      </Button>
+
+      <br />
+      <br />
     </PageDefault>
   );
 }

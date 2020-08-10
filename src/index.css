@@ -6,12 +6,11 @@
 :root {
   --primary: #00c88c;
   --black: #000000;
+  --secondary:#FF2929;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
   --grayMedium: #e5e5e5; 
   --white: #FFFFFF;
-  --frontEnd: #FF2929;
-  --backEnd: #00C88C;
 }
 
 html,

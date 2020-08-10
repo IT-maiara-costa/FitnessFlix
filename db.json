@@ -3,44 +3,56 @@
     {
       "id": 1,
       "titulo": "Exercícios Cardio",
-      "cor": "#F22613",
-      "link_extra": {
-        "text": "Oque é HIIT?",
-        "url": "https://www.youtube.com/watch?v=9161ODxeCm8"
-      }
+      "descricao": "Exercícios Cardio",
+      "cor": "#F22613"
     },
     {
       "id": 2,
-      "titulo": " Barriga",
-      "cor": "#2dc378",
-      "link_extra": {
-        "text": "Saiba qual é o tipo da sua barriga!",
-        "url": "https://www.youtube.com/watch?v=jxqQcMXE7Y0"
-      }
+      "titulo": "Barriga",
+      "descricao": "Exercícios para a Barriga",
+      "cor": "#2dc378"
     },
     {
       "id": 3,
       "titulo": "Alongamentos",
-      "cor": "#eb0f29",
-      "link_extra": {
-        "text": "Alogamento pré-treino.",
-        "url": "https://www.youtube.com/watch?v=617tl9lmqYQ"
-      }
+      "descricao": "Exercícios de Alongamento",
+      "cor": "#eb0f29"
     },
     {
       "id": 4,
       "titulo": "Back fat",
+      "descricao": "Exercícios para gordura nas costas",
       "cor": "#6BB18C"
     },
     {
       "id": 5,
       "titulo": "Danças",
+      "descricao": "Danças",
       "cor": "#ff0000"
     },
     {
       "id": 6,
       "titulo": "Bumbum",
+      "descricao": "Exercícios para o bumbum",
       "cor": "#55C34D"
+    },
+    {
+      "id": 7,
+      "titulo": "Aerohiit",
+      "descricao": "Exercícios Aerohiit",
+      "cor": "#970a0a"
+    },
+    {
+      "titulo": "Cintura",
+      "descricao": "Exercícios para a cintura",
+      "cor": "#053d1b",
+      "id": 8
+    },
+    {
+      "titulo": "Pernas",
+      "descricao": "Exercícios para as pernas",
+      "cor": "#dea1a1",
+      "id": 9
     }
   ],
   "videos": [
@@ -49,30 +61,6 @@
       "categoriaId": 1,
       "titulo": "Oque é um Exercício Cardio? HIIT é um tipo de Cardio?",
       "url": "https://www.youtube.com/watch?v=QsiImYTLvTk"
-    },
-    {
-      "id": 2,
-      "categoriaId": 1,
-      "titulo": "Cardio Destruidor de Gordura Localizada",
-      "url": "https://www.youtube.com/watch?v=S7vkLON_gNI"
-    },
-    {
-      "id": 3,
-      "categoriaId": 1,
-      "titulo": "Very Sweet Cardio Workout",
-      "url": "https://www.youtube.com/watch?v=8lsObBqspPg"
-    },
-    {
-      "id": 4,
-      "categoriaId": 1,
-      "titulo": "10 min Full Body HIIT Workout",
-      "url": "https://www.youtube.com/watch?v=g51-94alcuc"
-    },
-    {
-      "id": 5,
-      "categoriaId": 1,
-      "titulo": "This Killer Workout Torches Calories — About 500 in 45 Minutes",
-      "url": "https://www.youtube.com/watch?v=_Zem0_qsDg0"
     },
     {
       "id": 6,
@@ -87,22 +75,10 @@
       "url": "https://www.youtube.com/watch?v=-nXY1rQt1bI"
     },
     {
-      "id": 8,
-      "categoriaId": 2,
-      "titulo": "Lower Belly Fat",
-      "url": "https://www.youtube.com/watch?v=Xfp6jhJIW4c"
-    },
-    {
       "id": 9,
       "categoriaId": 2,
       "titulo": "Easy Ab Exercises to Lose Hanging Lower Belly Fat",
       "url": "https://www.youtube.com/watch?v=ndaSjbjXPPo"
-    },
-    {
-      "id": 10,
-      "categoriaId": 2,
-      "titulo": "Best Love Handles & Belly Fat workout",
-      "url": "https://www.youtube.com/watch?v=fxG8wmRDMV0"
     },
     {
       "id": 11,
@@ -115,12 +91,6 @@
       "categoriaId": 2,
       "titulo": "4 exercícios Fáceis para Chapar a Barriga em casa ",
       "url": "https://www.youtube.com/watch?v=rXU74_Qmb8o"
-    },
-    {
-      "id": 13,
-      "categoriaId": 2,
-      "titulo": "[AEROHIIT] Derrete a Gordura localizada da Barriga, Culotes e Braços",
-      "url": "https://www.youtube.com/watch?v=SFGm2evhZA0"
     },
     {
       "id": 14,
@@ -207,28 +177,10 @@
       "url": "https://www.youtube.com/watch?v=tmpV2u1HD0I"
     },
     {
-      "id": 28,
-      "categoriaId": 5,
-      "titulo": "30-Minute Belly Dancing Workout For a Toned Core",
-      "url": "https://www.youtube.com/watch?v=ly9if9_0PCM"
-    },
-    {
       "id": 29,
       "categoriaId": 6,
       "titulo": "Aumentar coxas e bumbum",
       "url": "https://www.youtube.com/watch?v=rORDfjnTQ8w"
-    },
-    {
-      "id": 30,
-      "categoriaId": 6,
-      "titulo": "10-Minute Booty Shaping Workout",
-      "url": "https://www.youtube.com/watch?v=iAu_ueyPWdQ"
-    },
-    {
-      "id": 31,
-      "categoriaId": 6,
-      "titulo": "Treino especial para LEVANTAR O BUMBUM - Carol Borba",
-      "url": "https://www.youtube.com/watch?v=DLlSYXva6Tk"
     },
     {
       "id": 32,
@@ -237,10 +189,124 @@
       "url": "https://www.youtube.com/watch?v=iJoknztiPqU"
     },
     {
-      "id": 33,
+      "titulo": "Aerohiit pra queimar 500 calorias",
+      "url": "https://www.youtube.com/watch?v=byfqVDuqpRU",
+      "categoriaId": 7,
+      "id": 34
+    },
+    {
+      "titulo": "Aquele power treino intensivo para pernas!",
+      "url": "https://www.youtube.com/watch?v=IEtRj90lohA",
+      "categoriaId": 9,
+      "id": 36
+    },
+    {
+      "titulo": "Alongamento pré-treino",
+      "url": "https://www.youtube.com/watch?v=617tl9lmqYQ",
+      "categoriaId": 3,
+      "id": 37
+    },
+    {
+      "titulo": "How to get a smaller waist fast ",
+      "url": "https://www.youtube.com/watch?v=IcfiQIb1Ou4",
+      "categoriaId": 8,
+      "id": 38
+    },
+    {
+      "titulo": "Exercises To Grow Butt Not Thighs",
+      "url": "https://www.youtube.com/watch?v=rkqyinjRFMk&t=10s",
       "categoriaId": 6,
-      "titulo": "Exercises To Grow Butt Not Thighs - UnderButt + UpperBooty ",
-      "url": "https://www.youtube.com/watch?v=rkqyinjRFMk"
+      "id": 39
+    },
+    {
+      "titulo": "10 melhores exercícios para AUMENTAR O BUMBUM ",
+      "url": "https://www.youtube.com/watch?v=cLYFO5cL2KI&t=171s",
+      "categoriaId": 6,
+      "id": 40
+    },
+    {
+      "titulo": "6 exercises to grow upper and lower butt",
+      "url": "https://www.youtube.com/watch?v=VYMCOOufbfQ",
+      "categoriaId": 6,
+      "id": 41
+    },
+    {
+      "titulo": "Melhor treino para emagrecer rápido",
+      "url": "https://www.youtube.com/watch?v=SKVN-JAtV3A&t=386s",
+      "categoriaId": 7,
+      "id": 42
+    },
+    {
+      "titulo": "Aerohiit para Iniciantes - Ideal para quem quer emagrecer ",
+      "url": "https://www.youtube.com/watch?v=KwxCuTuknMk&t=812s",
+      "categoriaId": 7,
+      "id": 43
+    },
+    {
+      "titulo": "Treino para secar a barriga rápido em casa - 10 min",
+      "url": "https://www.youtube.com/watch?v=VApuQ03OFhc",
+      "categoriaId": 7,
+      "id": 44
+    },
+    {
+      "titulo": "5-Minute Leg Workout",
+      "url": "https://www.youtube.com/watch?v=zT50JEqjRN8",
+      "categoriaId": 9,
+      "id": 45
+    },
+    {
+      "titulo": "7 Min everyday to have toned slimmer legs",
+      "url": "https://www.youtube.com/watch?v=dx3wc2tA3gY",
+      "categoriaId": 9,
+      "id": 46
+    },
+    {
+      "titulo": "Slim Legs Stretching! Fast Muscle Repair & Recovery ",
+      "url": "https://www.youtube.com/watch?v=CIa8tUmyNZE",
+      "categoriaId": 9,
+      "id": 47
+    },
+    {
+      "titulo": "Treino intensivo para afinar a cintura",
+      "url": "https://www.youtube.com/watch?v=fK6XYJpMsMY",
+      "categoriaId": 8,
+      "id": 48
+    },
+    {
+      "titulo": "Desafio Para Reduzir a Cintura em 7 Dias",
+      "url": "https://www.youtube.com/watch?v=TX5JfMBlBGc",
+      "categoriaId": 8,
+      "id": 49
+    },
+    {
+      "titulo": "How to Get a Slim Waist Fast",
+      "url": "https://www.youtube.com/watch?v=U3tPnjJoO0c&t=507s",
+      "categoriaId": 8,
+      "id": 50
+    },
+    {
+      "titulo": "30 Minute HIIT Cardio Workout + Abs At Home - With Warmup ",
+      "url": "https://www.youtube.com/watch?v=bdCX8Nb_2Mg",
+      "categoriaId": 1,
+      "id": 51
+    },
+    {
+      "titulo": "Killer HIIT CARDIO Workout // No Equipment",
+      "url": "https://www.youtube.com/watch?v=M60AVSKVqUA",
+      "categoriaId": 1,
+      "id": 52
+    },
+    {
+      "titulo": "Mega treino cardio destruidor de gordura localizada!",
+      "url": "https://www.youtube.com/watch?v=S7vkLON_gNI",
+      "categoriaId": 1,
+      "id": 53
+    },
+    {
+      "titulo": "10 MIN MORNING WORKOUT TO BURN BELLY FAT ",
+      "url": "https://www.youtube.com/watch?v=9s6eq67LhyI",
+      "categoriaId": 2,
+      "id": 54
     }
   ]
 }

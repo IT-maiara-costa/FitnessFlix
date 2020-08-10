@@ -17,7 +17,7 @@ const Button = styled.button`
   transition: opacity .3s;
   &:hover,
   &:focus{
-     opacity: .5;
+     opacity: 0.8;
   }
 `;
 
@@ -26,4 +26,24 @@ const SuccessButton = styled(Button)`
   border:  none;
 `;
 
-export { Button, SuccessButton };
+const DangerButton = styled(Button)`
+background: var(--secondary);
+border:  none;
+margin-left: 20px;
+`;
+
+const WatchButton = styled(Button)`
+  border:  none;
+  color: var(--primary);
+  background: var(--black);
+  transition: opacity .3s;
+  display: none;
+  margin: 0 auto;
+  @media (max-width: 800px) {
+    display: block;
+  }
+`;
+
+export {
+  Button, SuccessButton, DangerButton, WatchButton,
+};

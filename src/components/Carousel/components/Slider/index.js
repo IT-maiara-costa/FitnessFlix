@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import SlickSlider from 'react-slick';
 import styled from 'styled-components';
 
@@ -38,7 +39,6 @@ export const SliderItem = styled.li`
   }
 `;
 
-
 const Slider = ({ children }) => (
   <Container>
     <SlickSlider {...{
@@ -55,4 +55,7 @@ const Slider = ({ children }) => (
   </Container>
 );
 
-export default Slider; 
+Slider.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+export default Slider;

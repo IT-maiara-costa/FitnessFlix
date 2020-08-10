@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import PageDefault from '../../components/PageDefault';
 import ErrorImg from '../../assets/img/ErrorImg.png';
+import { Button } from '../../components/Button';
 
 const PageNot = styled.div`
    width: 100%;
@@ -19,7 +20,9 @@ function PageNotFound() {
       <PageNot>
         <h1>Página não encontrada</h1>
         <img className="ErrorImg" src={ErrorImg} alt="Pagina não encontrada" />
-        <Link to="/"> Ir para home </Link>
+        <br />
+        <br />
+        <Button as={Link} to="/"> Ir para a HomePage</Button>
       </PageNot>
     </PageDefault>
   );
