@@ -3,7 +3,7 @@
 Projeto voltado para exercícios físicos baseado na Netflix. 
 
 
-## Features
+## Description
 
 - Permite adição de categorias.
 - Permite a adição e remoção de vídeos.
